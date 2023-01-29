@@ -24,3 +24,6 @@
     background-color: yellow;
     border: 5px solid black;
 }
+.box:hover {
+    opacity: 0.7;
+}
