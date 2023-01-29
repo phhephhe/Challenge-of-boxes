@@ -1,5 +1,6 @@
+const centerDiv = document.querySelector('.center-div');
+
 function generateBox() {
-    const centerDiv = document.querySelector('.center-div');
     const width = 50 + Math.floor(Math.random() * 200);
     const height = 50 + Math.floor(Math.random() * 200);
     let x = Math.floor(Math.random() * (1000 - width));
@@ -90,3 +91,12 @@ function generateBox() {
   const clearButton = document.querySelector('.clear-button');
   clearButton.addEventListener('click', clearDiv);
   
+
+  const removeBtn = document.querySelector('.remove-btn');
+  removeBtn.addEventListener('click', () => {
+    if (centerDiv.children.length > 0) {
+      centerDiv.removeChild(centerDiv.lastChild);
+    } else {
+      alert("No boxes to remove");
+    }
+  })
