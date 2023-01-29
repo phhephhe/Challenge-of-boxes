@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.center-div{
+    width: 1000px;
+    height: 1000px;
+    background-color: blue;
+    position: relative;
+}
+.add-btn, .clear-button {
+    margin: 0 auto;
+    width: 80px;
+    height: 40px;
+}
+.box {
+    position: absolute;
+    background-color: yellow;
+    border: 5px solid black;
+}
